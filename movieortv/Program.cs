@@ -20,8 +20,6 @@ namespace movieortv
             Regex reg = new Regex(pattern);
             string searchTerm = reg.Match(input).ToString();
 
-
-
             RunAsync(searchTerm).Wait();
         }
 
